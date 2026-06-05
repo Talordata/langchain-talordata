@@ -1,0 +1,64 @@
+{
+  "key": "google_lens",
+  "name": "Lens",
+  "query_field": "url",
+  "groups": [
+    {
+      "key": "basic",
+      "title_key": "serp.form.groups.basic",
+      "title": "Basic Parameters",
+      "collapsible": false,
+      "fields": [
+        {
+          "key": "url",
+          "type": "image_url",
+          "required": true,
+          "label_key": "serp.fields.lens_url",
+          "label": "Image URL",
+          "help": "Public URL of the image to analyze"
+        },
+        {
+          "key": "q",
+          "type": "text",
+          "label_key": "serp.fields.q",
+          "help_key": "serp.fields.q_help",
+          "label": "Search Query",
+          "help": "The search keyword used by the selected engine. Example: pizza."
+        },
+        {
+          "key": "safe",
+          "type": "select",
+          "default_value": "off",
+          "label_key": "serp.fields.safe",
+          "label": "Safe Search",
+          "help": "Controls safe search filtering for engines that support it.",
+          "options": [
+            {
+              "value": "off",
+              "label": "Off"
+            },
+            {
+              "value": "active",
+              "label": "Active"
+            }
+          ]
+        },
+        {
+          "key": "no_cache",
+          "type": "switch",
+          "default_value": false,
+          "label_key": "serp.fields.no_cache",
+          "help_key": "serp.fields.no_cache_help",
+          "label": "No Cache",
+          "help": "When enabled, the adapter returns a fresh preview result."
+        }
+      ]
+    }
+  ],
+  "category": {
+    "key": "google",
+    "name": "Google",
+    "icon": "google"
+  },
+  "is_default_engine": false
+}
