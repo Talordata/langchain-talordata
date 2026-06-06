@@ -65,7 +65,14 @@ def _build_engine_params_description(schema, max_options: int = 8) -> str:
 class TalorSerpSearchInput(BaseModel):
     """Input for a Talor SERP search."""
 
-    query: str = Field(description="The search query to execute.")
+    query: Optional[str] = Field(
+        default=None,
+        description=(
+            "Optional search query to execute. Some engines can work without it "
+            "when the required engine-specific params are provided, such as "
+            "google_patents_details with parent_id."
+        ),
+    )
     engine: Optional[str] = Field(
         default=None,
         description=(
@@ -197,7 +204,7 @@ def create_talor_serp_tool(
             "Available engines:\n"
             f"{engines_summary}\n\n"
             "Parameters:\n"
-            "  query: the search query (required)\n"
+            "  query: optional search query\n"
             "  engine: engine key (default: google)\n"
             "  params: engine-specific parameters as JSON object\n"
             "\n"
@@ -209,13 +216,21 @@ def create_talor_serp_tool(
             "  no_cache: boolean, force fresh results\n"
         )
 
-    def _run(query: str, engine: Optional[str] = None, params: Optional[Dict[str, Any]] = None) -> str:
+    def _run(
+        query: Optional[str] = None,
+        engine: Optional[str] = None,
+        params: Optional[Dict[str, Any]] = None,
+    ) -> str:
         extra = params or {}
-        return wrapper.run(query, engine=engine, **extra)
+        return wrapper.run(query or "", engine=engine, **extra)
 
-    async def _arun(query: str, engine: Optional[str] = None, params: Optional[Dict[str, Any]] = None) -> str:
+    async def _arun(
+        query: Optional[str] = None,
+        engine: Optional[str] = None,
+        params: Optional[Dict[str, Any]] = None,
+    ) -> str:
         extra = params or {}
-        return await wrapper.arun(query, engine=engine, **extra)
+        return await wrapper.arun(query or "", engine=engine, **extra)
 
     return StructuredTool(
         name=name,
