@@ -6,7 +6,7 @@ for 33 search engines across Google, Bing, Yandex, and DuckDuckGo.
 Quick start:
     >>> import os
     >>> os.environ["TALOR_API_KEY"] = "your-token"
-    >>> from langchain_talor_serp import TalorSerpAPIWrapper, TalorSerpTool
+    >>> from langchain_talordata import TalorSerpAPIWrapper, TalorSerpTool
     >>> wrapper = TalorSerpAPIWrapper()
     >>> wrapper.run("LangChain tutorial")
     >>> tool = TalorSerpTool.from_env()

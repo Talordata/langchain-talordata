@@ -1,14 +1,14 @@
-# langchain-talor-serp
+# langchain-talordata
 
 **LangChain integration for TalorData's SERP APIs**
 
-[![PyPI version](https://img.shields.io/pypi/v/langchain-talor-serp?color=blue)](https://pypi.org/project/langchain-talor-serp/)
-[![Python versions](https://img.shields.io/pypi/pyversions/langchain-talor-serp)](https://pypi.org/project/langchain-talor-serp/)
+[![PyPI version](https://img.shields.io/pypi/v/langchain-talordata?color=blue)](https://pypi.org/project/langchain-talordata/)
+[![Python versions](https://img.shields.io/pypi/pyversions/langchain-talordata)](https://pypi.org/project/langchain-talordata/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/Talordata-serp/langchain-talor-serp?style=social)](https://github.com/Talordata-serp/langchain-talor-serp)
-[![GitHub forks](https://img.shields.io/github/forks/Talordata-serp/langchain-talor-serp?style=social)](https://github.com/Talordata-serp/langchain-talor-serp)
-[![GitHub issues](https://img.shields.io/github/issues/Talordata-serp/langchain-talor-serp)](https://github.com/Talordata-serp/langchain-talor-serp/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Talordata-serp/langchain-talor-serp)](https://github.com/Talordata-serp/langchain-talor-serp)
+[![GitHub stars](https://img.shields.io/github/stars/Talordata-serp/langchain-talordata?style=social)](https://github.com/Talordata-serp/langchain-talordata)
+[![GitHub forks](https://img.shields.io/github/forks/Talordata-serp/langchain-talordata?style=social)](https://github.com/Talordata-serp/langchain-talordata)
+[![GitHub issues](https://img.shields.io/github/issues/Talordata-serp/langchain-talordata)](https://github.com/Talordata-serp/langchain-talordata/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Talordata-serp/langchain-talordata)](https://github.com/Talordata-serp/langchain-talordata)
 
 [Installation](#installation) •
 [Quick Start](#quick-start) •
@@ -26,7 +26,7 @@ This package provides:
 
 ## Overview
 
-`langchain-talor-serp` provides LangChain tools for [TalorData](https://talordata.com)'s SERP APIs, enabling your AI agents to:
+`langchain-talordata` provides LangChain tools for [TalorData](https://talordata.com)'s SERP APIs, enabling your AI agents to:
 
 - **Search** - Query search engines with geo-targeting and language customization
 - **Inspect engines** - Discover supported engines and engine-specific parameters
@@ -36,7 +36,7 @@ This package provides:
 ## Installation
 
 ```bash
-pip install langchain-talor-serp
+pip install langchain-talordata
 ```
 
 ## Quick start
@@ -52,7 +52,7 @@ os.environ["TALOR_API_KEY"] = "your-token"
 
 ### 3. Modern agent usage
 ```python
-from langchain_talor_serp import TalorSerpTool
+from langchain_talordata import TalorSerpTool
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
@@ -66,7 +66,7 @@ print(response)
 
 ### 4. Search tool
 ```python
-from langchain_talor_serp import TalorSerpTool
+from langchain_talordata import TalorSerpTool
 
 search_tool = TalorSerpTool.from_env()
 
@@ -85,7 +85,7 @@ print(result)
 
 Search parameters:
 
-- `query`: required search query text
+- `query`: optional search query text
 - `engine`: optional engine key such as `google`, `google_news`, `google_images`, `bing`, `duckduckgo`
 - `params`: optional engine-specific parameter object
 - common `params` fields include `gl`, `hl`, `device`, `location`, and `no_cache`
@@ -103,7 +103,7 @@ result = search_tool.invoke({
 
 ### 5. History tool
 ```python
-from langchain_talor_serp import TalorSerpTool
+from langchain_talordata import TalorSerpTool
 
 history_tool = TalorSerpTool.history_from_env()
 
@@ -132,7 +132,7 @@ History parameters:
 
 ### 6. Statistics tool
 ```python
-from langchain_talor_serp import TalorSerpTool
+from langchain_talordata import TalorSerpTool
 
 statistics_tool = TalorSerpTool.statistics_from_env()
 
@@ -155,7 +155,7 @@ Statistics parameters:
 
 ### 7. Bind multiple tools
 ```python
-from langchain_talor_serp import TalorSerpTool
+from langchain_talordata import TalorSerpTool
 from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
@@ -211,5 +211,5 @@ Use one of these approaches instead:
 
 ## Resources
 
-- PyPI: [langchain-talor-serp](https://pypi.org/project/langchain-talor-serp/)
+- PyPI: [langchain-talordata](https://pypi.org/project/langchain-talordata/)
 - TalorData: [talordata.com](https://talordata.com)

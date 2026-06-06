@@ -431,7 +431,7 @@ class TalorSerpTool:
     Example:
         .. code-block:: python
 
-            from langchain_talor_serp import TalorSerpTool
+            from langchain_talordata import TalorSerpTool
 
             # Get both search + list_engines tools
             tools = TalorSerpTool.tools_from_env()

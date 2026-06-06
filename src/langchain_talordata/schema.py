@@ -226,7 +226,7 @@ class EngineRegistry:
     """Loads and caches all engine schemas from bundled data/.
 
     The engine JSON schemas are bundled inside the package at
-    langchain_talor_serp/data/. This makes the package fully
+    langchain_talordata/data/. This makes the package fully
     self-contained for PyPI distribution.
     """
 
@@ -236,7 +236,7 @@ class EngineRegistry:
         self._load()
 
     def _load(self):
-        data_dir = resources.files("langchain_talor_serp") / "data"
+        data_dir = resources.files("langchain_talordata") / "data"
 
         index_text = (data_dir / "index.json").read_text(encoding="utf-8")
         self._index = json.loads(index_text)

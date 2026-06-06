@@ -41,7 +41,7 @@ class TalorSerpAPIWrapper(BaseModel):
     Example:
         .. code-block:: python
 
-            from langchain_talor_serp import TalorSerpAPIWrapper
+            from langchain_talordata import TalorSerpAPIWrapper
 
             wrapper = TalorSerpAPIWrapper(talor_api_key="your-token")
 
