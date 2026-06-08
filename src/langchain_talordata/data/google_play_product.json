@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "product_id",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.product_id",
           "label": "Product ID",
           "help": "Google product identifier"
         },
@@ -21,7 +18,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
           "options": [
@@ -1007,7 +1003,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -1301,7 +1296,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1645,7 +1640,6 @@
           "key": "store",
           "type": "select",
           "default_value": "apps",
-          "label_key": "serp.fields.store",
           "label": "Store type",
           "help": "Google Play store type",
           "options": [
@@ -1671,7 +1665,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -1679,9 +1672,7 @@
     },
     {
       "key": "tv_only",
-      "title_key": "serp.form.groups.tv_only",
       "title": "TV options",
-      "collapsible": false,
       "visible_when": {
         "field": "store",
         "equals": "tv"
@@ -1690,7 +1681,6 @@
         {
           "key": "season_id",
           "type": "text",
-          "label_key": "serp.fields.season_id",
           "label": "Season ID",
           "help": "TV season identifier"
         }
@@ -1698,15 +1688,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "platform",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.platform",
           "label": "Platform",
           "help": "Target device platform",
           "options": [
@@ -1740,7 +1727,6 @@
           "key": "offers",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.offers",
           "label": "Include offers",
           "help": "Include merchant offers in response"
         },
@@ -1748,14 +1734,12 @@
           "key": "specs",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.specs",
           "label": "Include specs",
           "help": "Include product specifications"
         },
         {
           "key": "all_reviews",
           "type": "select",
-          "label_key": "serp.fields.all_reviews",
           "label": "All reviews",
           "help": "Return the full review list",
           "options": [
@@ -1772,7 +1756,6 @@
         {
           "key": "rating",
           "type": "select",
-          "label_key": "serp.fields.rating",
           "label": "Rating",
           "help": "Minimum rating filter",
           "options": [
@@ -1801,7 +1784,6 @@
         {
           "key": "sort_by",
           "type": "select",
-          "label_key": "serp.fields.sort_by",
           "label": "Sort by",
           "help": "Sort criterion",
           "options": [
@@ -1823,14 +1805,12 @@
           "key": "num",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page."
         },
         {
           "key": "next_page_token",
           "type": "text",
-          "label_key": "serp.fields.next_page_token",
           "label": "Next page token",
           "help": "This parameter defines Next page token for the SERP request. Parameter name: next_page_token."
         },
@@ -1838,7 +1818,6 @@
           "key": "page",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.page",
           "label": "Page",
           "help": "This parameter defines Page for the SERP request. Parameter name: page."
         }
@@ -1847,8 +1826,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

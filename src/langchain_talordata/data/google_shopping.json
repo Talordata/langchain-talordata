@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "help_key": "serp.fields.gl_help",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
@@ -1009,7 +1005,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -1304,7 +1299,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1648,7 +1643,6 @@
           "key": "location",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.location",
           "help_key": "serp.fields.location_help",
           "label": "Location",
           "help": "Optional location targeting parameter.",
@@ -1703,7 +1697,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -1712,14 +1705,11 @@
     },
     {
       "key": "shopping_filters",
-      "title_key": "serp.form.groups.shopping_filters",
       "title": "Shopping filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "min_price",
           "type": "number",
-          "label_key": "serp.fields.min_price",
           "label": "Min price",
           "help": "Lower price bound",
           "min": 0
@@ -1727,7 +1717,6 @@
         {
           "key": "max_price",
           "type": "number",
-          "label_key": "serp.fields.max_price",
           "label": "Max price",
           "help": "Upper price bound",
           "min": 0
@@ -1735,7 +1724,6 @@
         {
           "key": "sort_by",
           "type": "select",
-          "label_key": "serp.fields.sort_by",
           "label": "Sort by",
           "help": "Sort criterion",
           "options": [
@@ -1752,7 +1740,6 @@
         {
           "key": "free_shipping",
           "type": "select",
-          "label_key": "serp.fields.free_shipping",
           "label": "Free shipping",
           "help": "Free shipping offers only",
           "options": [
@@ -1769,7 +1756,6 @@
         {
           "key": "on_sale",
           "type": "select",
-          "label_key": "serp.fields.on_sale",
           "label": "On sale",
           "help": "Show items currently on sale",
           "options": [
@@ -1786,7 +1772,6 @@
         {
           "key": "small_business",
           "type": "select",
-          "label_key": "serp.fields.small_business",
           "label": "Small business",
           "help": "Small business sellers only",
           "options": [
@@ -1804,7 +1789,6 @@
           "key": "direct_link",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.direct_link",
           "label": "Direct link",
           "help": "Return direct merchant links"
         }
@@ -1812,15 +1796,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "google_domain",
           "type": "select",
           "default_value": "google.com",
-          "label_key": "serp.fields.google_domain",
           "label": "Google Domain",
           "help": "Defines the Google domain used for the request. Example: google.com.",
           "options": [
@@ -2602,7 +2583,6 @@
           "key": "uule",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uule",
           "label": "UULE",
           "help": "Used with Google precise location targeting."
         },
@@ -2610,7 +2590,6 @@
           "key": "shoprs",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.shoprs",
           "label": "Shopping result parameter",
           "help": "This parameter defines Shopping result parameter for the SERP request. Parameter name: shoprs."
         },
@@ -2618,7 +2597,6 @@
           "key": "start",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results.",
           "min": 0
@@ -2627,7 +2605,6 @@
           "key": "num",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page.",
           "min": 1,
@@ -2638,8 +2615,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

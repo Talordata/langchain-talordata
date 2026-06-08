@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "help_key": "serp.fields.gl_help",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
@@ -1009,7 +1005,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -1304,7 +1299,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1648,7 +1643,6 @@
           "key": "location",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.location",
           "help_key": "serp.fields.location_help",
           "label": "Location",
           "help": "Optional location targeting parameter.",
@@ -1703,7 +1697,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -1712,14 +1705,11 @@
     },
     {
       "key": "image_filters",
-      "title_key": "serp.form.groups.image_filters",
       "title": "Image filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "imgar",
           "type": "select",
-          "label_key": "serp.fields.imgar",
           "label": "Image aspect ratio",
           "help": "Image aspect ratio",
           "options": [
@@ -1744,7 +1734,6 @@
         {
           "key": "imgsz",
           "type": "select",
-          "label_key": "serp.fields.imgsz",
           "label": "Image size",
           "help": "Image size filter",
           "options": [
@@ -1825,7 +1814,6 @@
         {
           "key": "image_color",
           "type": "select",
-          "label_key": "serp.fields.image_color",
           "label": "Image color",
           "help": "Filter by image color",
           "options": [
@@ -1898,7 +1886,6 @@
         {
           "key": "image_type",
           "type": "select",
-          "label_key": "serp.fields.image_type",
           "label": "Image type",
           "help": "Filter by image type",
           "options": [
@@ -1931,7 +1918,6 @@
         {
           "key": "licenses",
           "type": "select",
-          "label_key": "serp.fields.licenses",
           "label": "Licenses",
           "help": "Image usage license filter",
           "options": [
@@ -1968,7 +1954,6 @@
         {
           "key": "chips",
           "type": "text",
-          "label_key": "serp.fields.chips",
           "label": "Chips filter tokens",
           "help": "This parameter defines Chips filter tokens for the SERP request. Parameter name: chips."
         },
@@ -1976,7 +1961,6 @@
           "key": "num",
           "type": "number",
           "default_value": 50,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page.",
           "min": 1,
@@ -1986,15 +1970,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "google_domain",
           "type": "select",
           "default_value": "google.com",
-          "label_key": "serp.fields.google_domain",
           "label": "Google Domain",
           "help": "Defines the Google domain used for the request. Example: google.com.",
           "options": [
@@ -2776,7 +2757,6 @@
           "key": "cr",
           "type": "tags",
           "default_value": [],
-          "label_key": "serp.fields.cr",
           "label": "Country Set",
           "help": "Restrict results to specific countries",
           "options": [
@@ -3762,7 +3742,6 @@
           "key": "uule",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uule",
           "label": "UULE",
           "help": "Used with Google precise location targeting."
         },
@@ -3770,7 +3749,6 @@
           "key": "period_unit",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.period_unit",
           "label": "Period unit",
           "help": "Time period unit (day/week/...)",
           "options": [
@@ -3811,7 +3789,6 @@
         {
           "key": "period_value",
           "type": "number",
-          "label_key": "serp.fields.period_value",
           "label": "Period value",
           "help": "Time period count",
           "min": 1
@@ -3819,14 +3796,12 @@
         {
           "key": "start_date",
           "type": "date",
-          "label_key": "serp.fields.start_date",
           "label": "Start date",
           "help": "Start date of the range"
         },
         {
           "key": "end_date",
           "type": "date",
-          "label_key": "serp.fields.end_date",
           "label": "End date",
           "help": "End date of the range"
         },
@@ -3834,7 +3809,6 @@
           "key": "tbs",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.tbs",
           "label": "Advanced filter expression",
           "help": "Advanced filter expression"
         },
@@ -3842,7 +3816,6 @@
           "key": "nfpr",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.nfpr",
           "label": "Disable auto-correct",
           "help": "Disable auto-correct redirects"
         },
@@ -3850,7 +3823,6 @@
           "key": "filter",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.filter",
           "label": "Enable filter",
           "help": "Enable Google's similar-result filter"
         },
@@ -3858,7 +3830,6 @@
           "key": "start",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results."
         },
@@ -3866,7 +3837,6 @@
           "key": "safe",
           "type": "select",
           "default_value": "off",
-          "label_key": "serp.fields.safe",
           "label": "Safe Search",
           "help": "Controls safe search filtering for engines that support it.",
           "options": [
@@ -3885,8 +3855,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

@@ -5,16 +5,13 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "trend",
           "type": "select",
           "required": true,
           "default_value": "indexes",
-          "label_key": "serp.fields.trend",
           "label": "Trend type",
           "help": "Type of trend data",
           "options": [
@@ -52,7 +49,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -346,7 +342,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -690,7 +686,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
           "options": [
@@ -1676,7 +1671,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -1684,9 +1678,7 @@
     },
     {
       "key": "index_market_group",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": false,
       "visible_when": {
         "field": "trend",
         "equals": "indexes"
@@ -1695,7 +1687,6 @@
         {
           "key": "index_market",
           "type": "select",
-          "label_key": "serp.fields.index_market",
           "label": "Index market",
           "help": "Stock index market",
           "options": [
@@ -1718,8 +1709,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

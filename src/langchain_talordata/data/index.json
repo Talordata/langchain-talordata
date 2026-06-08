@@ -5,25 +5,21 @@
     {
       "key": "google",
       "name": "Google",
-      "icon": "google",
       "engine_count": 25
     },
     {
       "key": "bing",
       "name": "Bing",
-      "icon": "bing",
       "engine_count": 6
     },
     {
       "key": "yandex",
       "name": "Yandex",
-      "icon": "yandex",
       "engine_count": 1
     },
     {
       "key": "duckduckgo",
       "name": "DuckDuckGo",
-      "icon": "duckduckgo",
       "engine_count": 1
     }
   ],

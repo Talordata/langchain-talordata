@@ -5,14 +5,11 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
-          "label_key": "serp.fields.q_flights_note",
           "help_key": "serp.fields.q_help",
           "label": "Keywords",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -21,7 +18,6 @@
           "key": "departure_id",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.departure_id",
           "label": "Departure IATA",
           "help": "Origin airport IATA code"
         },
@@ -29,7 +25,6 @@
           "key": "arrival_id",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.arrival_id",
           "label": "Arrival IATA",
           "help": "Destination airport IATA code"
         },
@@ -37,7 +32,6 @@
           "key": "travel_class",
           "type": "select",
           "default_value": "1",
-          "label_key": "serp.fields.travel_class",
           "label": "Travel class",
           "help": "Cabin class",
           "options": [
@@ -63,7 +57,6 @@
           "key": "adults",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.adults",
           "label": "Adults",
           "help": "Number of adult passengers",
           "min": 1
@@ -72,7 +65,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -80,15 +72,12 @@
     },
     {
       "key": "round_trip_dates",
-      "title_key": "serp.form.groups.flights_round_trip",
       "title": "Round-trip dates",
-      "collapsible": false,
       "fields": [
         {
           "key": "trip_dates",
           "type": "date_range",
           "required": true,
-          "label_key": "serp.fields.trip_dates",
           "label": "Trip dates",
           "help": "Departure and return dates",
           "range_keys": {
@@ -100,15 +89,12 @@
     },
     {
       "key": "passenger_detail",
-      "title_key": "serp.form.groups.flights_passengers",
       "title": "Passenger detail",
-      "collapsible": true,
       "fields": [
         {
           "key": "children",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.children",
           "label": "Children",
           "help": "Number of child passengers",
           "min": 0
@@ -117,7 +103,6 @@
           "key": "infants_in_seat",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.infants_in_seat",
           "label": "Infants in seat",
           "help": "Infants occupying their own seat",
           "min": 0
@@ -126,7 +111,6 @@
           "key": "infants_on_lap",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.infants_on_lap",
           "label": "Infants on lap",
           "help": "Infants travelling on a lap",
           "min": 0
@@ -136,8 +120,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

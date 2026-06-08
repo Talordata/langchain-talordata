@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.scholar_cite_id",
           "label": "Citation source ID",
           "help": "Citation source identifier"
         },
@@ -21,7 +18,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -316,7 +312,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -660,7 +656,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -670,8 +665,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "text",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.text",
           "help_key": "serp.fields.text_help",
           "label": "Search Query",
           "help": "The search keyword for Yandex requests. Example: pizza."
@@ -22,14 +19,11 @@
     },
     {
       "key": "geographic_location",
-      "title_key": "serp.form.groups.geographic_location",
       "title": "Geographic Location",
-      "collapsible": false,
       "fields": [
         {
           "key": "lr",
           "type": "select",
-          "label_key": "serp.fields.lr",
           "label": "Language Restriction",
           "help": "Sets Yandex region targeting.",
           "options": [
@@ -151,15 +145,12 @@
     },
     {
       "key": "localization",
-      "title_key": "serp.form.groups.localization",
       "title": "Localization",
-      "collapsible": false,
       "fields": [
         {
           "key": "yandex_domain",
           "type": "select",
           "default_value": "yandex.com",
-          "label_key": "serp.fields.yandex_domain",
           "label": "Yandex domain",
           "help": "Yandex domain (yandex.com, yandex.ru, ...)",
           "options": [
@@ -193,7 +184,6 @@
           "key": "lang",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.lang",
           "label": "Language",
           "help": "Interface language",
           "options": [
@@ -255,14 +245,11 @@
     },
     {
       "key": "advanced_filters",
-      "title_key": "serp.form.groups.advanced_filters",
       "title": "Advanced Filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "within",
           "type": "select",
-          "label_key": "serp.fields.within",
           "label": "Time Range",
           "help": "Restrict results to recent time window",
           "options": [
@@ -287,7 +274,6 @@
         {
           "key": "rstr",
           "type": "select",
-          "label_key": "serp.fields.rstr",
           "label": "Restriction",
           "help": "Controls Yandex regional restriction and safe filtering.",
           "options": [
@@ -305,15 +291,12 @@
     },
     {
       "key": "pagination_talor",
-      "title_key": "serp.form.groups.pagination_talor",
       "title": "Pagination / Talor Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "p",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.p",
           "label": "Page",
           "help": "Sets the Yandex result page index."
         },
@@ -321,7 +304,6 @@
           "key": "render_js",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.render_js",
           "help_key": "serp.fields.render_js_help",
           "label": "Render JS",
           "help": "Controls whether the upstream page should execute JavaScript before returning results."
@@ -330,7 +312,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -340,8 +321,7 @@
   ],
   "category": {
     "key": "yandex",
-    "name": "Yandex",
-    "icon": "yandex"
+    "name": "Yandex"
   },
   "is_default_engine": false
 }

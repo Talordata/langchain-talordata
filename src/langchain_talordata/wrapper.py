@@ -137,9 +137,9 @@ class TalorSerpAPIWrapper(BaseModel):
         # Set query on the correct field
         raw[query_field] = query
 
-        # Set json format (default to "2" for JSON + HTML)
+        # Set json format (default to "1" for JSON only)
         if "json" not in kwargs:
-            raw["json"] = "2"
+            raw["json"] = "1"
 
         # Apply defaults from schema for common params
         defaults = {
@@ -192,7 +192,7 @@ class TalorSerpAPIWrapper(BaseModel):
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/x-www-form-urlencoded",
-                "Origin": "mcp",
+                "Origin": "langchain_py",
             },
             timeout=self.timeout,
         )
@@ -226,7 +226,7 @@ class TalorSerpAPIWrapper(BaseModel):
                 headers={
                     "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/x-www-form-urlencoded",
-                    "Origin": "mcp",
+                    "Origin": "langchain_py",
                 },
             )
             response.raise_for_status()
@@ -423,7 +423,7 @@ class TalorSerpAPIWrapper(BaseModel):
         headers: Dict[str, str] = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Origin": "mcp",
+            "Origin": "langchain_py",
         }
         if timezone:
             headers["X-Time-Zone"] = timezone
@@ -477,7 +477,7 @@ class TalorSerpAPIWrapper(BaseModel):
         headers: Dict[str, str] = {
             "Authorization": f"Bearer {api_key}",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Origin": "mcp",
+            "Origin": "langchain_py",
         }
         if timezone:
             headers["X-Time-Zone"] = timezone
@@ -539,7 +539,7 @@ class TalorSerpAPIWrapper(BaseModel):
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/x-www-form-urlencoded",
-                "Origin": "mcp",
+                "Origin": "langchain_py",
             },
             timeout=self.timeout,
         )
@@ -581,7 +581,7 @@ class TalorSerpAPIWrapper(BaseModel):
                 headers={
                     "Authorization": f"Bearer {api_key}",
                     "Content-Type": "application/x-www-form-urlencoded",
-                    "Origin": "mcp",
+                    "Origin": "langchain_py",
                 },
             )
             response.raise_for_status()

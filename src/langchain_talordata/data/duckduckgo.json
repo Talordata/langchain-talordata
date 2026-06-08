@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,15 +19,12 @@
     },
     {
       "key": "localization",
-      "title_key": "serp.form.groups.localization",
       "title": "Localization",
-      "collapsible": false,
       "fields": [
         {
           "key": "kl",
           "type": "select",
           "default_value": "us-en",
-          "label_key": "serp.fields.kl",
           "label": "Region",
           "help": "Sets the DuckDuckGo region and language.",
           "options": [
@@ -1016,14 +1010,11 @@
     },
     {
       "key": "advanced_filters",
-      "title_key": "serp.form.groups.advanced_filters",
       "title": "Advanced Filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "df",
           "type": "select",
-          "label_key": "serp.fields.df",
           "label": "Date Range",
           "help": "Filters DuckDuckGo results by date range.",
           "options": [
@@ -1052,7 +1043,6 @@
         {
           "key": "kp",
           "type": "select",
-          "label_key": "serp.fields.kp",
           "label": "Safe Search",
           "help": "Controls DuckDuckGo safe search level.",
           "options": [
@@ -1074,15 +1064,12 @@
     },
     {
       "key": "pagination_talor",
-      "title_key": "serp.form.groups.pagination_talor",
       "title": "Pagination / Talor Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "start",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results."
         },
@@ -1090,7 +1077,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."

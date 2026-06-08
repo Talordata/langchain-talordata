@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
         },
@@ -21,7 +18,6 @@
           "key": "cc",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.cc",
           "label": "Country/Region",
           "help": "Sets the country or region code for Bing results. Example: us.",
           "options": [
@@ -159,7 +155,7 @@
             },
             {
               "value": "TR",
-              "label": "Türkiye"
+              "label": "T鐪塺kiye"
             },
             {
               "value": "GB",
@@ -175,7 +171,6 @@
           "key": "mkt",
           "type": "select",
           "default_value": "en-us",
-          "label_key": "serp.fields.mkt",
           "label": "Market",
           "help": "Sets the Bing market and language. Example: en-US.",
           "options": [
@@ -337,7 +332,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -345,14 +339,11 @@
     },
     {
       "key": "image_filters",
-      "title_key": "serp.form.groups.image_filters",
       "title": "Image filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "imagesize",
           "type": "select",
-          "label_key": "serp.fields.imagesize",
           "label": "Image size",
           "help": "Image size category",
           "options": [
@@ -377,7 +368,6 @@
         {
           "key": "color2",
           "type": "select",
-          "label_key": "serp.fields.color2",
           "label": "Color",
           "help": "Image color filter",
           "options": [
@@ -446,7 +436,6 @@
         {
           "key": "photo",
           "type": "select",
-          "label_key": "serp.fields.photo",
           "label": "Photo type",
           "help": "Photo type filter",
           "options": [
@@ -487,7 +476,6 @@
         {
           "key": "aspect",
           "type": "select",
-          "label_key": "serp.fields.aspect",
           "label": "Aspect ratio",
           "help": "Image aspect ratio filter",
           "options": [
@@ -512,7 +500,6 @@
         {
           "key": "face",
           "type": "select",
-          "label_key": "serp.fields.face",
           "label": "Face",
           "help": "Image face filter",
           "options": [
@@ -533,7 +520,6 @@
         {
           "key": "license",
           "type": "select",
-          "label_key": "serp.fields.license",
           "label": "License",
           "help": "Usage license filter",
           "options": [
@@ -570,7 +556,6 @@
         {
           "key": "age",
           "type": "select",
-          "label_key": "serp.fields.bingage",
           "label": "Image freshness",
           "help": "Image freshness window",
           "options": [
@@ -596,14 +581,11 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "adlt",
           "type": "select",
-          "label_key": "serp.fields.adlt",
           "label": "Adult filter",
           "help": "Adult content filter strictness",
           "options": [
@@ -621,7 +603,6 @@
           "key": "first",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.first",
           "label": "Start Position",
           "help": "Sets the Bing pagination starting position."
         },
@@ -629,7 +610,6 @@
           "key": "count",
           "type": "number",
           "default_value": 35,
-          "label_key": "serp.fields.count",
           "label": "Results Per Page",
           "help": "Sets how many Bing results are returned."
         }
@@ -638,8 +618,7 @@
   ],
   "category": {
     "key": "bing",
-    "name": "Bing",
-    "icon": "bing"
+    "name": "Bing"
   },
   "is_default_engine": false
 }

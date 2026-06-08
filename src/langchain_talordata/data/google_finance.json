@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -317,7 +313,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -661,7 +657,6 @@
           "key": "window",
           "type": "select",
           "default_value": "TIMESERIES",
-          "label_key": "serp.fields.window",
           "label": "Time Range",
           "help": "Parameter is used for setting time range for the graph. It can be set to:\n1D - 1 Day(default)\n5D - 5 Days\n1M - 1 Month\n6M - 6 Months\nYTD - Year to Date\n1Y - 1 Year\n5Y - 5 Years\nMAX - Maximum",
           "options": [
@@ -675,7 +670,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -685,8 +679,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -317,7 +313,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -661,7 +657,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -670,15 +665,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "lr",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.lr",
           "label": "Language Restriction",
           "help": "Sets Yandex region targeting."
         },
@@ -686,7 +678,6 @@
           "key": "safe",
           "type": "select",
           "default_value": "off",
-          "label_key": "serp.fields.safe",
           "label": "Safe Search",
           "help": "Controls safe search filtering for engines that support it.",
           "options": [
@@ -703,7 +694,6 @@
         {
           "key": "filter",
           "type": "select",
-          "label_key": "serp.fields.filter",
           "label": "Enable filter",
           "help": "Enable Google's similar-result filter",
           "options": [
@@ -720,35 +710,30 @@
         {
           "key": "as_sdt",
           "type": "text",
-          "label_key": "serp.fields.as_sdt",
           "label": "Scholar Scope",
           "help": "Sets the Google Scholar scope parameter."
         },
         {
           "key": "as_ylo",
           "type": "number",
-          "label_key": "serp.fields.as_ylo",
           "label": "Year From",
           "help": "Filters Google Scholar results from this year."
         },
         {
           "key": "as_yhi",
           "type": "number",
-          "label_key": "serp.fields.as_yhi",
           "label": "Year To",
           "help": "Filters Google Scholar results up to this year."
         },
         {
           "key": "cites",
           "type": "text",
-          "label_key": "serp.fields.cites",
           "label": "Citation ID",
           "help": "Finds articles that cite the specified Google Scholar result."
         },
         {
           "key": "scisbd",
           "type": "select",
-          "label_key": "serp.fields.scisbd",
           "label": "Sort by Date",
           "help": "Controls whether Google Scholar results are sorted by date.",
           "options": [
@@ -769,14 +754,12 @@
         {
           "key": "cluster",
           "type": "text",
-          "label_key": "serp.fields.cluster",
           "label": "Cluster ID",
           "help": "Uses a Google Scholar cluster ID to retrieve related versions."
         },
         {
           "key": "as_vis",
           "type": "select",
-          "label_key": "serp.fields.as_vis",
           "label": "Exclude Citations",
           "help": "Controls whether citations are excluded from Google Scholar results.",
           "options": [
@@ -793,7 +776,6 @@
         {
           "key": "as_rr",
           "type": "select",
-          "label_key": "serp.fields.as_rr",
           "label": "Review Articles Only",
           "help": "Limits Google Scholar results to review articles.",
           "options": [
@@ -811,7 +793,6 @@
           "key": "start",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results."
         },
@@ -819,7 +800,6 @@
           "key": "num",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page."
         }
@@ -828,8 +808,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

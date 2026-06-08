@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "langchain-talordata"
-version = "0.1.1"
+version = "0.1.2"
 description = "LangChain integration for Talor SERP API — 33 search engines in one tool"
 readme = "README.md"
 license = {text = "MIT"}
@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Talordata-serp/langchain-talordata"
-Repository = "https://github.com/Talordata-serp/langchain-talordata"
+Homepage = "https://github.com/Talordata/langchain_talordata.git"
+Repository = "https://github.com/Talordata/langchain_talordata.git"
 
 [project.optional-dependencies]
 dev = [

@@ -5,16 +5,13 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
           "default_value": "",
-          "label_key": "serp.fields.q",
           "placeholder_key": "serp.fields.q_placeholder",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza.",
@@ -24,7 +21,6 @@
           "key": "device",
           "type": "select",
           "default_value": "desktop",
-          "label_key": "serp.fields.device",
           "label": "Device Type",
           "help": "Defines the device type used to render or fetch search results.",
           "options": [
@@ -46,15 +42,12 @@
     },
     {
       "key": "geographic_location",
-      "title_key": "serp.form.groups.geographic_location",
       "title": "Geographic Location",
-      "collapsible": false,
       "fields": [
         {
           "key": "location",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.location",
           "label": "Location",
           "help": "Optional location targeting parameter.",
           "options": [
@@ -108,7 +101,6 @@
           "key": "uule",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uule",
           "label": "UULE",
           "help": "Used with Google precise location targeting."
         }
@@ -116,15 +108,12 @@
     },
     {
       "key": "localization",
-      "title_key": "serp.form.groups.localization",
       "title": "Localization",
-      "collapsible": false,
       "fields": [
         {
           "key": "google_domain",
           "type": "select",
           "default_value": "google.com",
-          "label_key": "serp.fields.google_domain",
           "label": "Google Domain",
           "help": "Defines the Google domain used for the request. Example: google.com.",
           "options": [
@@ -906,7 +895,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
           "options": [
@@ -1892,7 +1880,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -2186,7 +2173,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -2530,7 +2517,6 @@
           "key": "cr",
           "type": "tags",
           "default_value": [],
-          "label_key": "serp.fields.cr",
           "label": "Country Set",
           "help": "Restrict results to specific countries",
           "options": [
@@ -3516,7 +3502,6 @@
           "key": "lr",
           "type": "tags",
           "default_value": [],
-          "label_key": "serp.fields.lr",
           "label": "Language Restriction",
           "help": "Sets Yandex region targeting.",
           "options": [
@@ -3810,7 +3795,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -4154,15 +4139,12 @@
     },
     {
       "key": "advanced_filters",
-      "title_key": "serp.form.groups.advanced_filters",
       "title": "Advanced Filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "tbm",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.tbm",
           "label": "Search vertical",
           "help": "Google search vertical",
           "options": [
@@ -4200,7 +4182,6 @@
           "key": "ludocid",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.ludocid",
           "label": "Local document ID",
           "help": "Local document ID"
         },
@@ -4208,7 +4189,6 @@
           "key": "kgmid",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.kgmid",
           "label": "Knowledge Graph MID",
           "help": "Knowledge Graph machine ID"
         },
@@ -4216,7 +4196,6 @@
           "key": "ibp",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.ibp",
           "label": "IBP render parameter",
           "help": "Internal IBP render parameter"
         },
@@ -4224,7 +4203,6 @@
           "key": "lsig",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.lsig",
           "label": "LSIG parameter",
           "help": "Internal LSIG signing parameter"
         },
@@ -4232,7 +4210,6 @@
           "key": "si",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.si",
           "label": "SI parameter",
           "help": "Internal SI parameter"
         },
@@ -4240,7 +4217,6 @@
           "key": "uds",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uds",
           "label": "UDS parameter",
           "help": "Internal UDS parameter"
         },
@@ -4248,7 +4224,6 @@
           "key": "tbs",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.time_range",
           "label": "Time Range",
           "help": "Time range filter",
           "options": [
@@ -4282,7 +4257,6 @@
           "key": "safe",
           "type": "select",
           "default_value": "off",
-          "label_key": "serp.fields.safe_search",
           "label": "Safe Search",
           "help": "Controls safe search filtering.",
           "options": [
@@ -4300,7 +4274,6 @@
           "key": "nfpr",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.nfpr",
           "label": "Disable auto-correct",
           "help": "Disable auto-correct redirects"
         },
@@ -4308,7 +4281,6 @@
           "key": "filter",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.filter",
           "label": "Enable filter",
           "help": "Enable Google's similar-result filter"
         }
@@ -4316,15 +4288,12 @@
     },
     {
       "key": "pagination_talor",
-      "title_key": "serp.form.groups.pagination_talor",
       "title": "Pagination / Talor Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "start",
           "type": "number",
           "default_value": 0,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results.",
           "min": 0
@@ -4333,7 +4302,6 @@
           "key": "num",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page.",
           "min": 1,
@@ -4343,7 +4311,6 @@
           "key": "render_js",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.render_js",
           "label": "Render JS",
           "help": "Controls whether the upstream page should execute JavaScript before returning results."
         },
@@ -4351,7 +4318,6 @@
           "key": "ai_overview",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.ai_overview",
           "label": "AI Overview",
           "help": "Controls whether AI overview data is included when the selected engine supports it."
         },
@@ -4359,7 +4325,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -4368,8 +4333,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": true
 }

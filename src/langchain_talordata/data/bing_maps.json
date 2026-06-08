@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "cc",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.cc",
           "label": "Country/Region",
           "help": "Sets the country or region code for Bing results. Example: us.",
           "options": [
@@ -160,7 +156,7 @@
             },
             {
               "value": "TR",
-              "label": "Türkiye"
+              "label": "T眉rkiye"
             },
             {
               "value": "GB",
@@ -176,7 +172,6 @@
           "key": "setlang",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.setlang",
           "label": "Language",
           "help": "Bing interface language",
           "options": [
@@ -394,11 +389,11 @@
             },
             {
               "value": "nb",
-              "label": "Norwegian - Bokmål"
+              "label": "Norwegian - Bokm氓l"
             },
             {
               "value": "nb-NO",
-              "label": "Norwegian - Bokmål - Norway"
+              "label": "Norwegian - Bokm氓l - Norway"
             },
             {
               "value": "nn",
@@ -470,7 +465,7 @@
             },
             {
               "value": "tr-TR",
-              "label": "Turkish - Türkiye"
+              "label": "Turkish - T眉rkiye"
             },
             {
               "value": "uk",
@@ -501,7 +496,6 @@
         {
           "key": "cp",
           "type": "text",
-          "label_key": "serp.fields.cp",
           "placeholder_key": "serp.fields.ll_placeholder",
           "label": "Center point",
           "help": "Map center point coordinates",
@@ -511,7 +505,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -520,15 +513,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "first",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.first",
           "label": "Start Position",
           "help": "Sets the Bing pagination starting position."
         },
@@ -536,14 +526,12 @@
           "key": "count",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.count",
           "label": "Results Per Page",
           "help": "Sets how many Bing results are returned."
         },
         {
           "key": "place_id",
           "type": "text",
-          "label_key": "serp.fields.place_id",
           "label": "Place ID",
           "help": "Google Place ID"
         }
@@ -552,8 +540,7 @@
   ],
   "category": {
     "key": "bing",
-    "name": "Bing",
-    "icon": "bing"
+    "name": "Bing"
   },
   "is_default_engine": false
 }

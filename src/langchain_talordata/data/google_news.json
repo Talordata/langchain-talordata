@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "help_key": "serp.fields.gl_help",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
@@ -1009,7 +1005,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -1304,7 +1299,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1648,7 +1643,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -1657,35 +1651,29 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "topic_token",
           "type": "text",
-          "label_key": "serp.fields.topic_token",
           "label": "Topic token",
           "help": "This parameter defines Topic token for the SERP request. Parameter name: topic_token."
         },
         {
           "key": "publication_token",
           "type": "text",
-          "label_key": "serp.fields.publication_token",
           "label": "Publication token",
           "help": "This parameter defines Publication token for the SERP request. Parameter name: publication_token."
         },
         {
           "key": "section_token",
           "type": "text",
-          "label_key": "serp.fields.section_token",
           "label": "Section token",
           "help": "This parameter defines Section token for the SERP request. Parameter name: section_token."
         },
         {
           "key": "story_token",
           "type": "text",
-          "label_key": "serp.fields.story_token",
           "label": "Story token",
           "help": "This parameter defines Story token for the SERP request. Parameter name: story_token."
         },
@@ -1693,7 +1681,6 @@
           "key": "so",
           "type": "select",
           "default_value": "0",
-          "label_key": "serp.fields.so",
           "label": "Sort by",
           "help": "Sort method",
           "options": [
@@ -1712,8 +1699,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -21,7 +18,6 @@
         {
           "key": "language",
           "type": "text",
-          "label_key": "serp.fields.language",
           "label": "Language",
           "help": "Result language"
         },
@@ -29,7 +25,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -38,14 +33,11 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "before",
           "type": "text",
-          "label_key": "serp.fields.before",
           "placeholder_key": "serp.fields.patent_date_placeholder",
           "label": "Before",
           "help": "Filter results filed before this date",
@@ -54,7 +46,6 @@
         {
           "key": "after",
           "type": "text",
-          "label_key": "serp.fields.after",
           "placeholder_key": "serp.fields.patent_date_placeholder",
           "label": "After",
           "help": "Filter results filed after this date",
@@ -63,21 +54,18 @@
         {
           "key": "inventor",
           "type": "text",
-          "label_key": "serp.fields.inventor",
           "label": "Inventor",
           "help": "Patent inventor filter"
         },
         {
           "key": "assignee",
           "type": "text",
-          "label_key": "serp.fields.assignee",
           "label": "Assignee",
           "help": "Patent assignee filter"
         },
         {
           "key": "country",
           "type": "select",
-          "label_key": "serp.fields.country",
           "label": "Country",
           "help": "This parameter defines Country for the SERP request. Parameter name: country.",
           "options": [
@@ -1062,7 +1050,6 @@
         {
           "key": "status",
           "type": "select",
-          "label_key": "serp.fields.status",
           "label": "Status",
           "help": "Patent legal status",
           "options": [
@@ -1083,7 +1070,6 @@
         {
           "key": "type",
           "type": "select",
-          "label_key": "serp.fields.type",
           "label": "Type",
           "help": "Result type filter",
           "options": [
@@ -1105,7 +1091,6 @@
           "key": "clustered",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.clustered",
           "label": "Clustered",
           "help": "Group similar patents"
         },
@@ -1113,7 +1098,6 @@
           "key": "dups",
           "type": "select",
           "default_value": "family",
-          "label_key": "serp.fields.dups",
           "label": "Duplicates",
           "help": "How to handle duplicate patents",
           "options": [
@@ -1131,7 +1115,6 @@
           "key": "patents",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.patents",
           "label": "Patents only",
           "help": "Limit to patent results only"
         },
@@ -1139,14 +1122,12 @@
           "key": "scholar",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.scholar",
           "label": "Scholar only",
           "help": "Limit to scholar results"
         },
         {
           "key": "litigation",
           "type": "select",
-          "label_key": "serp.fields.litigation",
           "label": "Litigation",
           "help": "Patent litigation status",
           "options": [
@@ -1167,7 +1148,6 @@
         {
           "key": "sort",
           "type": "select",
-          "label_key": "serp.fields.sort",
           "label": "Sort",
           "help": "Sort order",
           "options": [
@@ -1189,7 +1169,6 @@
           "key": "page",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.page",
           "label": "Page",
           "help": "This parameter defines Page for the SERP request. Parameter name: page."
         },
@@ -1197,7 +1176,6 @@
           "key": "num",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page."
         }
@@ -1206,8 +1184,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

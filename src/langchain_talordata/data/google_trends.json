@@ -5,22 +5,18 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
         },
         {
           "key": "geo",
           "type": "text",
-          "label_key": "serp.fields.geo",
           "placeholder_key": "serp.fields.geo_placeholder",
           "label": "Geo",
           "help": "Geographic location filter",
@@ -30,7 +26,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -324,7 +319,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -668,7 +663,6 @@
           "key": "data_type",
           "type": "select",
           "default_value": "TIMESERIES",
-          "label_key": "serp.fields.data_type",
           "label": "Data type",
           "help": "Type of trends data to return",
           "options": [
@@ -698,7 +692,6 @@
           "key": "region",
           "type": "select",
           "default_value": "COUNTRY",
-          "label_key": "serp.fields.region",
           "label": "Region",
           "help": "Trends region scope",
           "options": [
@@ -724,7 +717,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -732,14 +724,11 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "date",
           "type": "text",
-          "label_key": "serp.fields.trends_date",
           "placeholder_key": "serp.fields.trends_date_placeholder",
           "label": "Date range",
           "help": "Trends date range expression",
@@ -749,7 +738,6 @@
           "key": "cat",
           "type": "select",
           "default_value": "0",
-          "label_key": "serp.fields.cat",
           "label": "Category ID",
           "help": "Trends category ID",
           "options": [
@@ -798,7 +786,6 @@
         {
           "key": "gprop",
           "type": "select",
-          "label_key": "serp.fields.gprop",
           "label": "Property",
           "help": "Google property scope (web/news/images...)",
           "options": [
@@ -828,7 +815,6 @@
           "key": "tz",
           "type": "text",
           "default_value": "0",
-          "label_key": "serp.fields.tz",
           "label": "Timezone offset",
           "help": "Timezone offset in minutes"
         }
@@ -837,8 +823,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

@@ -5,14 +5,11 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
-          "label_key": "serp.fields.q",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
         },
@@ -20,7 +17,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
           "options": [
@@ -1006,7 +1002,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -1300,7 +1295,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1643,7 +1638,6 @@
         {
           "key": "games_category",
           "type": "select",
-          "label_key": "serp.fields.games_category",
           "label": "Games category",
           "help": "Filter by game category",
           "options": [
@@ -1724,35 +1718,30 @@
         {
           "key": "chart",
           "type": "text",
-          "label_key": "serp.fields.chart",
           "label": "Chart",
           "help": "Pre-defined chart name"
         },
         {
           "key": "next_page_token",
           "type": "text",
-          "label_key": "serp.fields.next_page_token",
           "label": "Next page token",
           "help": "This parameter defines Next page token for the SERP request. Parameter name: next_page_token."
         },
         {
           "key": "section_page_token",
           "type": "text",
-          "label_key": "serp.fields.section_page_token",
           "label": "Section page token",
           "help": "This parameter defines Section page token for the SERP request. Parameter name: section_page_token."
         },
         {
           "key": "see_more_token",
           "type": "text",
-          "label_key": "serp.fields.see_more_token",
           "label": "See more token",
           "help": "This parameter defines See more token for the SERP request. Parameter name: see_more_token."
         },
         {
           "key": "age",
           "type": "select",
-          "label_key": "serp.fields.age",
           "label": "Age group",
           "help": "Target age group filter",
           "options": [
@@ -1773,7 +1762,6 @@
         {
           "key": "store_device",
           "type": "select",
-          "label_key": "serp.fields.store_device",
           "label": "Device",
           "help": "Target device for the store",
           "options": [
@@ -1807,7 +1795,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -1816,8 +1803,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

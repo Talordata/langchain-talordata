@@ -5,10 +5,7 @@
 [![PyPI version](https://img.shields.io/pypi/v/langchain-talordata?color=blue)](https://pypi.org/project/langchain-talordata/)
 [![Python versions](https://img.shields.io/pypi/pyversions/langchain-talordata)](https://pypi.org/project/langchain-talordata/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/Talordata-serp/langchain-talordata?style=social)](https://github.com/Talordata-serp/langchain-talordata)
-[![GitHub forks](https://img.shields.io/github/forks/Talordata-serp/langchain-talordata?style=social)](https://github.com/Talordata-serp/langchain-talordata)
-[![GitHub issues](https://img.shields.io/github/issues/Talordata-serp/langchain-talordata)](https://github.com/Talordata-serp/langchain-talordata/issues)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Talordata-serp/langchain-talordata)](https://github.com/Talordata-serp/langchain-talordata)
+
 
 [Installation](#installation) •
 [Quick Start](#quick-start) •

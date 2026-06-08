@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
         },
@@ -21,7 +18,6 @@
           "key": "device",
           "type": "select",
           "default_value": "desktop",
-          "label_key": "serp.fields.device",
           "label": "Device Type",
           "help": "Defines the device type used to render or fetch search results.",
           "options": [
@@ -39,15 +35,12 @@
     },
     {
       "key": "geographic_location",
-      "title_key": "serp.form.groups.geographic_location",
       "title": "Geographic Location",
-      "collapsible": false,
       "fields": [
         {
           "key": "location",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.location",
           "label": "Location",
           "help": "Optional location targeting parameter.",
           "options": [
@@ -100,14 +93,12 @@
         {
           "key": "lat",
           "type": "text",
-          "label_key": "serp.fields.lat",
           "label": "Latitude",
           "help": "Latitude coordinate"
         },
         {
           "key": "lon",
           "type": "text",
-          "label_key": "serp.fields.lon",
           "label": "Longitude",
           "help": "Longitude coordinate"
         }
@@ -115,15 +106,12 @@
     },
     {
       "key": "localization",
-      "title_key": "serp.form.groups.localization",
       "title": "Localization",
-      "collapsible": false,
       "fields": [
         {
           "key": "cc",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.cc",
           "label": "Country/Region",
           "help": "Sets the country or region code for Bing results. Example: us.",
           "options": [
@@ -261,7 +249,7 @@
             },
             {
               "value": "TR",
-              "label": "Türkiye"
+              "label": "T眉rkiye"
             },
             {
               "value": "GB",
@@ -277,7 +265,6 @@
           "key": "mkt",
           "type": "select",
           "default_value": "en-us",
-          "label_key": "serp.fields.mkt",
           "label": "Market",
           "help": "Sets the Bing market and language. Example: en-US.",
           "options": [
@@ -439,14 +426,11 @@
     },
     {
       "key": "advanced_filters",
-      "title_key": "serp.form.groups.advanced_filters",
       "title": "Advanced Filters",
-      "collapsible": true,
       "fields": [
         {
           "key": "adlt",
           "type": "select",
-          "label_key": "serp.fields.adlt",
           "label": "Adult filter",
           "help": "Adult content filter strictness",
           "options": [
@@ -463,7 +447,6 @@
         {
           "key": "filters",
           "type": "text",
-          "label_key": "serp.fields.filters",
           "label": "Filters",
           "help": "Custom filter expression"
         }
@@ -471,15 +454,12 @@
     },
     {
       "key": "pagination_talor",
-      "title_key": "serp.form.groups.pagination_talor",
       "title": "Pagination / Talor Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "first",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.first",
           "label": "Start Position",
           "help": "Sets the Bing pagination starting position."
         },
@@ -487,7 +467,6 @@
           "key": "count",
           "type": "number",
           "default_value": 10,
-          "label_key": "serp.fields.count",
           "label": "Results Per Page",
           "help": "Sets how many Bing results are returned."
         },
@@ -495,7 +474,6 @@
           "key": "render_js",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.render_js",
           "label": "Render JS",
           "help": "Controls whether the upstream page should execute JavaScript before returning results."
         },
@@ -503,7 +481,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -512,8 +489,7 @@
   ],
   "category": {
     "key": "bing",
-    "name": "Bing",
-    "icon": "bing"
+    "name": "Bing"
   },
   "is_default_engine": false
 }

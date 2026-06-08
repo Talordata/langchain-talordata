@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
         }
@@ -21,15 +18,12 @@
     },
     {
       "key": "localization",
-      "title_key": "serp.form.groups.localization",
       "title": "Localization",
-      "collapsible": false,
       "fields": [
         {
           "key": "google_domain",
           "type": "select",
           "default_value": "google.com",
-          "label_key": "serp.fields.google_domain",
           "label": "Google Domain",
           "help": "Defines the Google domain used for the request. Example: google.com.",
           "options": [
@@ -811,7 +805,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
           "options": [
@@ -1797,7 +1790,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
           "options": [
@@ -2091,7 +2083,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -2435,15 +2427,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "check_in_date",
           "type": "date",
           "required": true,
-          "label_key": "serp.fields.check_in_date",
           "label": "Check-in date",
           "help": "Hotel check-in date"
         },
@@ -2451,7 +2440,6 @@
           "key": "check_out_date",
           "type": "date",
           "required": true,
-          "label_key": "serp.fields.check_out_date",
           "label": "Check-out date",
           "help": "Hotel check-out date"
         },
@@ -2459,7 +2447,6 @@
           "key": "adults",
           "type": "number",
           "default_value": 2,
-          "label_key": "serp.fields.adults",
           "label": "Adults",
           "help": "Number of adult passengers",
           "min": 1
@@ -2468,7 +2455,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
         }
@@ -2477,8 +2463,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

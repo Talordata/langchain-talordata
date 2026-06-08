@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "author_id",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.scholar_author_id",
           "label": "Author ID",
           "help": "Google Scholar author identifier"
         },
@@ -21,7 +18,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -316,7 +312,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -659,7 +655,6 @@
         {
           "key": "view_op",
           "type": "select",
-          "label_key": "serp.fields.view_op",
           "label": "View operation",
           "help": "Author page view operation",
           "options": [
@@ -680,7 +675,6 @@
         {
           "key": "sort",
           "type": "select",
-          "label_key": "serp.fields.sort",
           "label": "Sort",
           "help": "Sort order",
           "options": [
@@ -701,7 +695,6 @@
         {
           "key": "citation_id",
           "type": "text",
-          "label_key": "serp.fields.citation_id",
           "label": "Citation ID",
           "help": "Citation entry identifier"
         },
@@ -709,7 +702,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -718,15 +710,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "start",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.start",
           "label": "Start Position",
           "help": "Sets the starting offset for paginated results."
         },
@@ -734,7 +723,6 @@
           "key": "num",
           "type": "number",
           "default_value": 20,
-          "label_key": "serp.fields.num",
           "label": "Results Per Page",
           "help": "Sets the number of results requested per page."
         }
@@ -743,8 +731,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

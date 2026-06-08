@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "gl",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.gl",
           "help_key": "serp.fields.gl_help",
           "label": "Country/Region",
           "help": "Targets results by country or region. Example: us.",
@@ -1009,7 +1005,6 @@
           "key": "hl",
           "type": "select",
           "default_value": "en",
-          "label_key": "serp.fields.hl",
           "help_key": "serp.fields.hl_help",
           "label": "Language",
           "help": "Sets the interface language for returned results. Example: en.",
@@ -1304,7 +1299,7 @@
             },
             {
               "value": "ckb",
-              "label": "Kurdish (Soranî)"
+              "label": "Kurdish (Soran卯)"
             },
             {
               "value": "ky",
@@ -1648,7 +1643,6 @@
           "key": "location",
           "type": "select",
           "default_value": "",
-          "label_key": "serp.fields.location",
           "help_key": "serp.fields.location_help",
           "label": "Location",
           "help": "Optional location targeting parameter.",
@@ -1703,7 +1697,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -1712,15 +1705,12 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "google_domain",
           "type": "select",
           "default_value": "google.com",
-          "label_key": "serp.fields.google_domain",
           "label": "Google Domain",
           "help": "Defines the Google domain used for the request. Example: google.com.",
           "options": [
@@ -2502,21 +2492,18 @@
           "key": "uule",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uule",
           "label": "UULE",
           "help": "Used with Google precise location targeting."
         },
         {
           "key": "next_page_token",
           "type": "text",
-          "label_key": "serp.fields.next_page_token",
           "label": "Next page token",
           "help": "This parameter defines Next page token for the SERP request. Parameter name: next_page_token."
         },
         {
           "key": "chips",
           "type": "text",
-          "label_key": "serp.fields.chips",
           "label": "Chips filter tokens",
           "help": "This parameter defines Chips filter tokens for the SERP request. Parameter name: chips."
         },
@@ -2524,14 +2511,12 @@
           "key": "uds",
           "type": "text",
           "default_value": "",
-          "label_key": "serp.fields.uds",
           "label": "UDS parameter",
           "help": "Internal UDS parameter"
         },
         {
           "key": "lrad",
           "type": "number",
-          "label_key": "serp.fields.lrad",
           "label": "Search radius (km)",
           "help": "Search radius in kilometers",
           "min": 0
@@ -2539,7 +2524,6 @@
         {
           "key": "ltype",
           "type": "select",
-          "label_key": "serp.fields.ltype",
           "label": "Type",
           "help": "Job listing type filter",
           "options": [
@@ -2558,8 +2542,7 @@
   ],
   "category": {
     "key": "google",
-    "name": "Google",
-    "icon": "google"
+    "name": "Google"
   },
   "is_default_engine": false
 }

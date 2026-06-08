@@ -5,15 +5,12 @@
   "groups": [
     {
       "key": "basic",
-      "title_key": "serp.form.groups.basic",
       "title": "Basic Parameters",
-      "collapsible": false,
       "fields": [
         {
           "key": "q",
           "type": "text",
           "required": true,
-          "label_key": "serp.fields.q",
           "help_key": "serp.fields.q_help",
           "label": "Search Query",
           "help": "The search keyword used by the selected engine. Example: pizza."
@@ -22,7 +19,6 @@
           "key": "cc",
           "type": "select",
           "default_value": "us",
-          "label_key": "serp.fields.cc",
           "label": "Country/Region",
           "help": "Sets the country or region code for Bing results. Example: us.",
           "options": [
@@ -160,7 +156,7 @@
             },
             {
               "value": "TR",
-              "label": "Türkiye"
+              "label": "T眉rkiye"
             },
             {
               "value": "GB",
@@ -176,7 +172,6 @@
           "key": "mkt",
           "type": "select",
           "default_value": "en-us",
-          "label_key": "serp.fields.mkt",
           "label": "Market",
           "help": "Sets the Bing market and language. Example: en-US.",
           "options": [
@@ -338,7 +333,6 @@
           "key": "no_cache",
           "type": "switch",
           "default_value": false,
-          "label_key": "serp.fields.no_cache",
           "help_key": "serp.fields.no_cache_help",
           "label": "No Cache",
           "help": "When enabled, the adapter returns a fresh preview result."
@@ -347,22 +341,18 @@
     },
     {
       "key": "advanced",
-      "title_key": "serp.form.groups.advanced",
       "title": "Advanced Parameters",
-      "collapsible": true,
       "fields": [
         {
           "key": "efirst",
           "type": "number",
           "default_value": 1,
-          "label_key": "serp.fields.efirst",
           "label": "Start position",
           "help": "Result starting offset"
         },
         {
           "key": "filters",
           "type": "text",
-          "label_key": "serp.fields.filters",
           "label": "Filters",
           "help": "Custom filter expression"
         }
@@ -371,8 +361,7 @@
   ],
   "category": {
     "key": "bing",
-    "name": "Bing",
-    "icon": "bing"
+    "name": "Bing"
   },
   "is_default_engine": false
 }
