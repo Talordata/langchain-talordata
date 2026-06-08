@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Talordata/langchain_talordata.git"
-Repository = "https://github.com/Talordata/langchain_talordata.git"
+Homepage = "https://github.com/Talordata/langchain-talordata.git"
+Repository = "https://github.com/Talordata/langchain-talordata.git"
 
 [project.optional-dependencies]
 dev = [
