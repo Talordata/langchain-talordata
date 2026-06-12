@@ -210,3 +210,29 @@ Use one of these approaches instead:
 
 - PyPI: [langchain-talordata](https://pypi.org/project/langchain-talordata/)
 - TalorData: [talordata.com](https://talordata.com)
+
+## 🎁 Get Started for Free
+
+Try TalorData SERP API with **1,000 free searches** and start building AI agents, SEO tools, and search-driven applications today.
+
+- No infrastructure to manage
+- Multi-engine search access
+- Real-time structured results
+- Developer-friendly integration
+
+👉 [Start Free](https://talordata.com/?campaignid=hiy46bmdwF990Hqs&utm_source=Github29&utm_term=Github29)
+
+---
+
+## 🤝 Connect With Us
+
+Have questions or want to collaborate? Reach out through any of the following channels:
+
+- 📧 **Email:** [support@talordata.com](mailto:support@talordata.com)  
+- 🌐 **Website:** [https://talordata.com](	https://talordata.com/?campaignid=hiy46bmdwF990Hqs&utm_source=Github29&utm_term=Github29)   
+- 📱 **WhatsApp:** [+852 5628 3471](https://wa.me/85256283471)  
+- 💼 **LinkedIn:** [TalorData](linkedin.com/company/talordata)
+
+---
+
+> **TalorData empowers developers and AI agents with fast, reliable search-data access through a single multi-engine SERP API.**
