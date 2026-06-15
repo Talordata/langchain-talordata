@@ -206,7 +206,8 @@ class TalorSerpAPIWrapper(BaseModel):
 
         try:
             data = response.json()
-            result["data"] = data
+            # Unwrap nested {"code": 0, "data": {...}} wrappers
+            result["data"] = self._unwrap_data(data)
         except Exception:
             result["raw"] = response.text
 
@@ -239,7 +240,7 @@ class TalorSerpAPIWrapper(BaseModel):
 
         try:
             data = response.json()
-            result["data"] = data
+            result["data"] = self._unwrap_data(data)
         except Exception:
             result["raw"] = response.text
 
@@ -256,8 +257,8 @@ class TalorSerpAPIWrapper(BaseModel):
         if not isinstance(data, dict):
             return {}
 
-        # Handle nested {"code": 0, "data": {...}} wrapper
-        if "code" in data and "data" in data and isinstance(data["data"], dict):
+        # Handle nested {"code": 0, "data": {...}} wrapper (may be multiple levels)
+        while isinstance(data, dict) and "code" in data and "data" in data and isinstance(data["data"], dict):
             data = data["data"]
 
         # Handle json_html format: {"html": "...", "json": "{...}"}

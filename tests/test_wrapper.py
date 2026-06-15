@@ -301,6 +301,12 @@ class TestResponseProcessing:
         result = wrapper._unwrap_data(data)
         assert "organic" in result
 
+    def test_unwrap_double_nested(self, wrapper):
+        data = {"code": 0, "data": {"code": 0, "data": {"organic": [{"title": "A"}]}}}
+        result = wrapper._unwrap_data(data)
+        assert "organic" in result
+        assert len(result["organic"]) == 1
+
     def test_unwrap_json_html(self, wrapper):
         inner = {"organic": [{"title": "A"}]}
         data = {"json": json.dumps(inner), "html": "<html>"}
